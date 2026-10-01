@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #243047;
+    background: #f5f7fb;
+}
+
+.container {
+    width: min(1100px, 90%);
+    margin: 0 auto;
+}
+
+.site-header {
+    background: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.site-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    color: #2365d3;
+    font-size: 21px;
+}
+
+nav {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+}
+
+nav a {
+    color: #34445f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #2365d3;
+    text-decoration: underline;
+}
+
+main {
+    min-height: 75vh;
+    padding-bottom: 70px;
+}
+
+.hero {
+    padding: 100px 0;
+    max-width: 720px;
+}
+
+.hero h1,
+.page-heading h1 {
+    font-size: clamp(32px, 5vw, 50px);
+    margin: 10px 0;
+}
+
+.hero p,
+.page-heading p,
+.card p {
+    line-height: 1.7;
+    color: #64748b;
+}
+
+.eyebrow {
+    color: #2365d3 !important;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 28px;
+}
+
+.button {
+    display: inline-block;
+    padding: 13px 18px;
+    border-radius: 8px;
+    background: #2365d3;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button-light {
+    background: #e6efff;
+    color: #2365d3;
+}
+
+.page-heading {
+    padding: 65px 0 25px;
+}
+
+.card {
+    padding: 28px;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th,
+td {
+    padding: 16px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+    background: #f0f5fc;
+}
+
+.site-footer {
+    padding: 18px 0;
+    background: white;
+    border-top: 1px solid #e2e8f0;
+    color: #64748b;
+}
+
+@media (max-width: 600px) {
+    .site-header .container {
+        padding-bottom: 15px;
+    }
+
+    nav {
+        gap: 12px;
+    }
+}
